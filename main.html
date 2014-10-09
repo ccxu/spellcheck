@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- {% autoescape true %} -->
+<html>
+  <head>    
+    <link href="./css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/fo.css">
+  </head>
+  <body>
+    <h1>Spell Checker</h1>
+    <div class="container">
+      <form action="/" method="post">
+          <textarea class="form-control" rows="3" placeholder="write a word" name="text"></textarea>
+	  <input type="submit" class="btn btn-primary"> 
+      </form>
+      <hr>
+      <p>Your input:</p>
+      {{word}}
+      <br>
+      <br>
+      <p>Do you mean:</p>    
+      {{correct}}
+    </div>
+  </body>
+</html>
+<!-- {% endautoescape %} -->
